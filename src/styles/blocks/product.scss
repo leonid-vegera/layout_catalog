@@ -13,8 +13,14 @@
   &__image {
     width: 160px;
     height: 134px;
+    transition: transform 400ms;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+    }
   }
-  
+
   &__titles {
     display: flex;
     flex-direction: column;
