@@ -1,16 +1,14 @@
 .main {
   @include font (400, 11);
-  display: flex;
+  display: grid;
   justify-content: center;
 
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 50px $productIndent;
     justify-content: center;
+    margin: 50px 40px 0;
     max-width: mainWidth($productWidth, $productIndent);
-  }
-
-  &__product {
-    margin: 50px #{$productIndent/2} 0;
   }
 }
